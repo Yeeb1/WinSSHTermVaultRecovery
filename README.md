@@ -8,7 +8,9 @@ This Python script is a tool designed to recover the master password of a [WinSS
 - The `SALT` and `SUFFIX` are hardcoded in the `.NET` assembly of the application, while the `PEPPER` can be dynamically derived by debugging the application.
 
 ### About WinSSHTerm
-The ability to recover passwords from WinSSHTerm vaults should not be seen as a flaw in WinSSHTerm's design. It primarily highlights the crucial role of password strength. The security of encrypted data in such systems greatly depends on the complexity of the user's chosen password. Weak or common passwords are often the most significant vulnerability in these scenarios. Therefore, it's essential for users to adopt strong, unique passwords to ensure the security of their data.
+The ability to recover passwords from WinSSHTerm vaults should not be seen as a flaw in WinSSHTerm's design. It primarily highlights the crucial role of password strength. The security of encrypted data in such systems greatly depends on the complexity of the user's chosen password. Weak or common passwords are often the most significant vulnerability in these scenarios. 
+
+While the focus on password strength is crucial, it's also worth noting that encryption methodologies continually evolve. The method used by WinSSHTerm for encrypting the master password, involving hardcoded elements like salts and peppers, is effective but leaves room for advanced techniques. Implementing dynamic cryptographic practices could further enhance security. Nonetheless, the primary responsibility for safeguarding data in WinSSHTerm vaults lies in choosing robust, complex passwords by the users.
 
 ## Script Usage
 ```bash

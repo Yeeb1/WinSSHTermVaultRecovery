@@ -4,7 +4,7 @@ This Python script is a tool designed to recover the master password of a [WinSS
 ## How is this possible?
 - The WinSSHTerm vault uses a combination of a user-defined password, a static salt, and a pepper for its encryption.
 - The script utilizes `PBKDF2 HMAC` with `SHA1` for key derivation and `AES` in `CBC` mode for decryption.
-- The keyfile is decrypted using each password from the wordlist in conjunction with the static salt (`SALT`) and pepper (`PEPPER`) until the correct password is found.
+- The keyfile is decrypted using each password from the wordlist in conjunction with the static salt and pepper until the correct password is found.
 - The `SALT` and `SUFFIX` are hardcoded in the `.NET` assembly of the application, while the `PEPPER` can be dynamically derived by debugging the application.
 
 

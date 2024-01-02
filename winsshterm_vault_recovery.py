@@ -13,7 +13,7 @@ def attempt_decrypt(password, keyfile, PEPPER, SUFFIX, SALT):
 
     if SUFFIX in decrypted_content:
         decrypted_content = decrypted_content[:-(decrypted_content[-1])]
-        decrypted_content = decrypted_content[:-16]
+        decrypted_content = decrypted_content[:-16] # strip SUFFIX
         return True, password, None
     return False, None, None
 

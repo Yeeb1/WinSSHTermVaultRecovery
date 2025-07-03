@@ -1,4 +1,9 @@
 ## WinSSHTermVaultRecovery
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/edd7b5ae-7f1b-4bd4-bb17-8b861a9f0820" width="400">
+</p>
+
 This Python script is a tool designed to recover the master password of a [WinSSHTerm](https://winsshterm.blogspot.com) vault using the `keyfile` from WinSSHTerms's config directory. The script iterates through a provided wordlist, attempting to decrypt the keyfile with each password.
 
 ## How is this possible?
